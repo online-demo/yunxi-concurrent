@@ -9,8 +9,7 @@ public class Consumer extends Thread {
 
     @Override
     public void run() {
-        for (int i = 0; i < 10; i++)
-        {
+        for (int i = 0; i < 20; i++) {
             System.out.println("I am Consumer : Consumed Item " + i);
             Thread.yield();
         }

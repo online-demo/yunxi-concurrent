@@ -13,8 +13,7 @@ public class YieldDemo {
         producer.setPriority(Thread.MIN_PRIORITY);
         // 最高优先级
         consumer.setPriority(Thread.MAX_PRIORITY);
-
-        producer.start();
         consumer.start();
+        producer.start();
     }
 }
