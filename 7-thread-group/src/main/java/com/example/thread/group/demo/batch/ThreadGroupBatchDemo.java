@@ -14,7 +14,7 @@ public class ThreadGroupBatchDemo {
                     = new BatchThread(threadGroup, "线程" + i);
             batchThread.start();
         }
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         threadGroup.interrupt();
         System.out.println("调用了ThreadGroup.interrupt()方法");
     }
