@@ -11,6 +11,8 @@
         <module>6-thread-common-method-2</module>
         <module>5-thread-group</module>
         <module>7-thread-group</module>
+        <module>8-volatile</module>
+        <module>8-thread-volatile</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
