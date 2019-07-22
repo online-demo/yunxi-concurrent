@@ -13,6 +13,7 @@
         <module>7-thread-group</module>
         <module>8-volatile</module>
         <module>8-thread-volatile</module>
+        <module>9-concurrent-sync</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
