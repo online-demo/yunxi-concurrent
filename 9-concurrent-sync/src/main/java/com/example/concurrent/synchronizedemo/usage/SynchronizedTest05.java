@@ -2,23 +2,22 @@ package com.example.concurrent.synchronizedemo.usage;
 
 /**
  * @Author: 无双老师【云析学院】
- * @Date: 2019-07-22 19:53
- * @Description: 多个线程访问同一个对象的同一个方法
+ * @Date: 2019-07-22 23:38
+ * @Description: synchronized作用于静态方法
  *
- * 两个线程同时对一个对象的一个方法进行操作，只有一个线程能够抢到锁。
- * 因为一个对象只有一把锁，一个线程获取了该对象的锁之后，其他线程无法获取该对象的锁，
- * 就不能访问该对象的其他synchronized实例方法，但是可以访问非synchronized修饰的方法
+ * 两个线程实例化两个不同的对象，但是访问的方法是静态的，两个线程发生了互斥（即一个线程访问，另一个线程只能等着），
+ * 因为静态方法是依附于类而不是对象的，当synchronized修饰静态方法时，锁是class对象。
  */
-public class SynchronizedTest01 implements Runnable {
+public class SynchronizedTest05 implements Runnable {
     /**
      * 共享资源
      */
     static int counter = 0;
 
     /**
-     * synchronized 修饰实例方法
+     * synchronized 修饰静态方法方法
      */
-    public synchronized void increase() {
+    public static synchronized void increase() {
         for (int j = 0; j < 10; j++) {
             System.out.println(Thread.currentThread().getName() + "执行累加操作。。。");
             try {
@@ -36,9 +35,8 @@ public class SynchronizedTest01 implements Runnable {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        SynchronizedTest01 test = new SynchronizedTest01();
-        Thread t1 = new Thread(test, "线程1");
-        Thread t2 = new Thread(test, "线程2");
+        Thread t1 = new Thread(new SynchronizedTest05(), "线程1");
+        Thread t2 = new Thread(new SynchronizedTest05(), "线程2");
         t1.start();
         t2.start();
         t1.join();

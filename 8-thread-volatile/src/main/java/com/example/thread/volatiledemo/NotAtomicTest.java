@@ -9,6 +9,7 @@ public class NotAtomicTest {
     public volatile int inc = 0;
 
     public void increase() {
+        // inc = inc + 1;
         inc++;
     }
 
