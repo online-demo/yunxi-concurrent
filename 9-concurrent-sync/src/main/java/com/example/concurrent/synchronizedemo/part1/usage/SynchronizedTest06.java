@@ -1,4 +1,4 @@
-package com.example.concurrent.synchronizedemo.usage;
+package com.example.concurrent.synchronizedemo.part1.usage;
 
 /**
  * @Author: 无双老师【云析学院】

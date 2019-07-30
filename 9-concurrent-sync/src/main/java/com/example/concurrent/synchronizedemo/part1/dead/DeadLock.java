@@ -1,4 +1,4 @@
-package com.example.concurrent.synchronizedemo.dead;
+package com.example.concurrent.synchronizedemo.part1.dead;
 
 /**
  * @Author: 无双老师【云析学院】

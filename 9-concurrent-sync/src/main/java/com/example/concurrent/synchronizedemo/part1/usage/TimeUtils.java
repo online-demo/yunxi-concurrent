@@ -1,4 +1,4 @@
-package com.example.concurrent.synchronizedemo.usage;
+package com.example.concurrent.synchronizedemo.part1.usage;
 import	java.text.SimpleDateFormat;
 import java.util.Date;
 
