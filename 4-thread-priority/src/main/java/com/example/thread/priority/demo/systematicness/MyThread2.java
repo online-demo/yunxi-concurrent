@@ -10,7 +10,7 @@ import java.util.Random;
 public class MyThread2 extends Thread {
     @Override
     public void run() {
-        long start = TimeUtils.currentTime();
+        long start = System.currentTimeMillis();
         System.out.println("------2------ thread 2 start running");
         long count = 0;
         for (int i = 0; i < 10; i++) {
@@ -20,7 +20,7 @@ public class MyThread2 extends Thread {
                 count = count + i;
             }
         }
-        long end = TimeUtils.currentTime();
+        long end = System.currentTimeMillis();
         System.out.println("------2------ thread 2 use time = " + (end - start));
     }
 }
