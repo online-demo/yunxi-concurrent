@@ -24,7 +24,7 @@ public class SynchronizedTest04 {
     /**
      * 同步方法2
      */
-    public void method2() {
+    public synchronized void method2() {
         System.out.println("Method 2 started：\t" + TimeUtils.currentTime());
         try {
             System.out.println("Method 2 execute：\t" + TimeUtils.currentTime());
