@@ -9,9 +9,7 @@
         <module>4-thread-priority</module>
         <module>5-thread-common-method</module>
         <module>6-thread-common-method-2</module>
-        <module>5-thread-group</module>
         <module>7-thread-group</module>
-        <module>8-volatile</module>
         <module>8-thread-volatile</module>
         <module>9-concurrent-sync</module>
     </modules>
