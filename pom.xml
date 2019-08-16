@@ -15,6 +15,7 @@
         <module>8-thread-volatile</module>
         <module>9-concurrent-sync</module>
         <module>10-thread-communication</module>
+        <module>11-thead-threadlocal</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
