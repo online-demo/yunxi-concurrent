@@ -55,6 +55,7 @@ public class ThreadLocalDemo {
             // 新的value值放入threadLocal中
             threadLocal.set(value);
             System.out.println(Thread.currentThread().getName() + " threadLocal new value: " + value);
+            System.out.println(Thread.currentThread().getName() + " threadLocal latest value : " + threadLocal.get());
             // 释放信号量
             semaphore.release();
             // 在线程池中,当线程退出之前一定要记得调用remove方法，因为在线程池中的线程对象是循环使用的
