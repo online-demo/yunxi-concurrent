@@ -1,4 +1,4 @@
-package concurrent.communication;
+package com.example.concurrent.communication;
 
 import java.io.IOException;
 import java.io.PipedReader;
