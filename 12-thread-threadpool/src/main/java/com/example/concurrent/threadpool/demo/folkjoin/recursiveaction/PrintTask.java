@@ -1,4 +1,4 @@
-package com.example.concurrent.threadpool.demo.folkjoin;
+package com.example.concurrent.threadpool.demo.folkjoin.recursiveaction;
 
 import java.util.concurrent.RecursiveAction;
 
@@ -8,7 +8,9 @@ import java.util.concurrent.RecursiveAction;
  * @Description: ForkJoin线程池使用
  */
 public class PrintTask extends RecursiveAction {
-    //最多只能打印50个数
+    /**
+     * 最多只能打印50个数
+     */
     private static final int THRESHOLD = 50;
     private int start;
     private int end;

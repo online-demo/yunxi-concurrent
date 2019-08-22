@@ -1,4 +1,4 @@
-package com.example.concurrent.threadpool.demo;
+package com.example.concurrent.threadpool.demo.threadpool.runnable;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * @Author: 无双老师【云析学院】
  * @Date: 2019-08-20 22:58
- * @Description: 线程池使用
+ * @Description: 线程池使用 无返回值
  */
 public class ThreadTest {
 
@@ -37,14 +37,13 @@ public class ThreadTest {
             /* 任务数量 */
             int count = 10;
             for (int i = 1; i <= count; i++) {
-                MyTask task = new MyTask(String.valueOf(i));
+                RunnableTask task = new RunnableTask(String.valueOf(i));
                 executor.submit(task);
             }
         } finally {
             assert executor != null;
             executor.shutdown();
         }
-
 
     }
 
@@ -82,10 +81,10 @@ public class ThreadTest {
     /**
      * 线程
      */
-    static class MyTask implements Runnable {
+    static class RunnableTask implements Runnable {
         private String name;
 
-        public MyTask(String name) {
+        public RunnableTask(String name) {
             this.name = name;
         }
 
@@ -102,7 +101,8 @@ public class ThreadTest {
 
         @Override
         public String toString() {
-            return "MyTask [name=" + name + "]";
+            return "RunnableTask [name=" + name + "]";
         }
     }
+
 }

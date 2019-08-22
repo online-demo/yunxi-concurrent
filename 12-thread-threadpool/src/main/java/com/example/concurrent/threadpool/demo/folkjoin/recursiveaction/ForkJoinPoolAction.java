@@ -1,4 +1,4 @@
-package com.example.concurrent.threadpool.demo.folkjoin;
+package com.example.concurrent.threadpool.demo.folkjoin.recursiveaction;
 
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @Author: 无双老师【云析学院】
  * @Date: 2019-08-21 21:08
- * @Description: ForkJoin线程池使用
+ * @Description: ForkJoin线程池使用 无返回值
  * <p>
  * ForkJoinPool的优势在于，可以充分利用多cpu，多核cpu的优势，
  * 把一个任务拆分成多个“小任务”，把多个“小任务”放到多个处理器核心上并行执行；
