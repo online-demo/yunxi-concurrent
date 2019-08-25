@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * @Description: ForkJoin线程池使用 无返回值
  * <p>
  * ForkJoinPool的优势在于，可以充分利用多cpu，多核cpu的优势，
- * 把一个任务拆分成多个“小任务”，把多个“小任务”放到多个处理器核心上并行执行；
+ * 把一个大任务拆分成多个“小任务”，把多个“小任务”放到多个处理器核心上并行执行；
  * 当多个“小任务”执行完成之后，再将这些执行结果合并起来即可.
  * <p>
  * 创建了ForkJoinPool实例之后，就可以调用ForkJoinPool的submit(ForkJoinTask<T> task)
@@ -27,7 +27,7 @@ public class ForkJoinPoolAction {
 
     public static void main(String[] args) throws Exception {
         // 验证CopyOnWriteArraySet功能 —— 去重
-        validateSet(RESULT_SET);
+//        validateSet(RESULT_SET);
         // 验证FolkJoinPool功能
         validateFolkJoin();
     }

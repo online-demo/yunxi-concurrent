@@ -28,6 +28,7 @@ public class FactorialCalculator implements Callable<String> {
                 TimeUnit.MICROSECONDS.sleep(200);
             }
         }
-        return String.format("%s输出%d的阶乘为：%d\n", Thread.currentThread().getName(), number, result);
+        return String.format("%s输出%d的阶乘为：%d\n",
+                Thread.currentThread().getName(), number, result);
     }
 }

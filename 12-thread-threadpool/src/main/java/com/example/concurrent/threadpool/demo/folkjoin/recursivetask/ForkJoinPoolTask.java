@@ -11,7 +11,7 @@ import java.util.concurrent.ForkJoinTask;
  */
 public class ForkJoinPoolTask {
     public static void main(String[] args) throws Exception {
-        //需求：对于长度为10000的元素进行累加
+        //需求：对于长度为10000的元素数组进行累加
         int[] nums = new int[10000];
         Random random = new Random();
         int total = 0;
