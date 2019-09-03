@@ -15,6 +15,7 @@
         <module>10-thread-communication</module>
         <module>11-thead-threadlocal</module>
         <module>12-thread-threadpool</module>
+        <module>13-sync-aqs</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
