@@ -19,23 +19,34 @@ public class SemaphoreDemo {
     /**
      * 每次获取的许可数
      */
-    private static final int PERMITS = 1;
+    private static final int PERMITS = 2;
+
+    /**
+     * 线程
+     */
     static class TestThread implements Runnable {
         @Override
         public void run() {
             try {
-                // 获取2个许可
+                // 获取许可
                 SEMAPHORE.acquire(PERMITS);
                 System.out.println(printCurrent() +
                         " : " + Thread.currentThread().getName() + " 进来了");
+                // 持有许可，不会释放许可
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
+                // ！！！！非常重要！！！！
                 SEMAPHORE.release(PERMITS);
             }
         }
 
+        /**
+         * 打印时间
+         *
+         * @return  当前时间字符串
+         */
         private String printCurrent() {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
             return sdf.format(new Date());
