@@ -19,7 +19,7 @@ public class SemaphoreDemo {
     /**
      * 每次获取的许可数
      */
-    private static final int PERMITS = 2;
+    private static final int PERMITS = 1;
 
     /**
      * 线程
