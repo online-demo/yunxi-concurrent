@@ -3,7 +3,7 @@ package com.example.thread.priority.demo.systematicness;
 import java.util.Random;
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-05-30
  * @Description:
  */

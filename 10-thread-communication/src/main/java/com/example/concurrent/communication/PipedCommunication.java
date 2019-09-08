@@ -5,7 +5,7 @@ import java.io.PipedReader;
 import java.io.PipedWriter;
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-08-06 19:50
  * @Description: 线程之间的通信——管道输入/输出流
  *

@@ -3,7 +3,7 @@ package com.example.concurrent.threadpool.demo.folkjoin.recursivetask;
 import java.util.concurrent.RecursiveTask;
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-08-22 20:32
  * @Description: ForkJoin线程池使用
  */

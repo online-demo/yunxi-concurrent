@@ -2,7 +2,7 @@ package com.example.thread.common.method.sleep;
 
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-06-04
  * @Description:    验证sleep()方法不会释放锁、wait()方法会释放锁
  */
