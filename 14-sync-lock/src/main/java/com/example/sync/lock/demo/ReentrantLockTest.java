@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-09-09 20:05
  * @Description: ReentrantLock公平锁/非公平锁
  */

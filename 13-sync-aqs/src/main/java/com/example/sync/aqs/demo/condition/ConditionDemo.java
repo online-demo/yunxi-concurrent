@@ -42,7 +42,7 @@ public class ConditionDemo {
         Thread1 thread1 = conditionDemo.new Thread1();
         Thread2 thread2 = conditionDemo.new Thread2();
         Thread3 thread3 = conditionDemo.new Thread3();
-        // 启动线程任务123.
+        // 启动线程任务1、2、3.
         executorService.execute(thread1);
         executorService.execute(thread2);
         executorService.execute(thread3);
@@ -59,21 +59,21 @@ public class ConditionDemo {
      * @throws InterruptedException 中断异常
      */
     public static void signalTest(ConditionDemo conditionDemo) throws InterruptedException {
-        // 获取独占锁 唤醒cd1的线程
+        // 获取独占锁 唤醒condition1的线程
         conditionDemo.lock.lock();
         conditionDemo.condition1.signal();
         // 释放独占锁 等待thread1执行完毕.
         conditionDemo.lock.unlock();
         Thread.sleep(2000);
 
-        // 获取独占锁 唤醒cd2的线程
+        // 获取独占锁 唤醒condition2的线程
         conditionDemo.lock.lock();
         conditionDemo.condition2.signal();
         // 释放独占锁 等待thread2执行完毕.
         conditionDemo.lock.unlock();
         Thread.sleep(2000);
 
-        // 获取独占锁 唤醒cd3的线程
+        // 获取独占锁 唤醒condition3的线程
         conditionDemo.lock.lock();
         conditionDemo.condition3.signal();
         // 释放独占锁 等待thread2执行完毕.
@@ -97,7 +97,7 @@ public class ConditionDemo {
                 Thread.currentThread().setName(Thread1.class.getSimpleName());
                 System.out.printf("%s线程启动\n", Thread.currentThread().getName());
                 lock.lock();
-                // 在cd1上阻塞，并且释放独占锁lock.
+                // 在condition1上阻塞，并且释放独占锁lock.
                 condition1.await();
                 System.out.printf("%s线程被唤醒", Thread.currentThread().getName());
                 printDate();
@@ -123,7 +123,7 @@ public class ConditionDemo {
                 Thread.currentThread().setName(Thread2.class.getSimpleName());
                 System.out.printf("%s线程启动\n", Thread.currentThread().getName());
                 lock.lock();
-                // 在cd2上阻塞，并且释放独占锁lock.
+                // 在condition2上阻塞，并且释放独占锁lock.
                 condition2.await();
                 System.out.printf("%s线程被唤醒", Thread.currentThread().getName());
                 printDate();
@@ -149,7 +149,7 @@ public class ConditionDemo {
                 Thread.currentThread().setName(Thread3.class.getSimpleName());
                 System.out.printf("%s线程启动\n", Thread.currentThread().getName());
                 lock.lock();
-                // 在cd3上阻塞，并且释放独占锁lock.
+                // 在condition2上阻塞，并且释放独占锁lock.
                 condition3.await();
                 System.out.printf("%s线程被唤醒", Thread.currentThread().getName());
                 printDate();
