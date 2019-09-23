@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-05-13
  * @Description: Callable接口创建线程
  */

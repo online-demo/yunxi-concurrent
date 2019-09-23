@@ -3,7 +3,7 @@ package com.example.concurrent.threadpool.demo.threadpool.callable;
 import java.util.concurrent.*;
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-08-22 21:02
  * @Description: ForkJoin线程池使用  有返回值
  */

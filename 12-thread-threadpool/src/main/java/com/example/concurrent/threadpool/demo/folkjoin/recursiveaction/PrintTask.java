@@ -3,7 +3,7 @@ package com.example.concurrent.threadpool.demo.folkjoin.recursiveaction;
 import java.util.concurrent.RecursiveAction;
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-08-21 21:21
  * @Description: ForkJoin线程池使用
  */
@@ -20,7 +20,8 @@ public class PrintTask extends RecursiveAction {
         if (end - start < THRESHOLD) {
             for (int i = start; i < end; i++) {
                 ForkJoinPoolAction.RESULT_SET.add(i);
-                System.out.println(Thread.currentThread().getName() + "的i值\t" + i);
+                System.out.println(Thread.currentThread().getName()
+                        + "的i值\t" + i);
             }
         } else {
             //递归切分

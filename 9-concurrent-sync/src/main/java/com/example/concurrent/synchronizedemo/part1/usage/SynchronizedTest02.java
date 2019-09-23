@@ -1,7 +1,7 @@
 package com.example.concurrent.synchronizedemo.part1.usage;
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-07-22 19:59
  * @Description: 一个线程获取了该对象的锁之后，其他线程来访问其他synchronized实例方法现象
  *

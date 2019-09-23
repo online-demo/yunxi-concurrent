@@ -3,7 +3,7 @@ package com.example.thread.group.demo.levels;
 import com.example.thread.group.demo.onelevel.TestThread;
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-06-16 20:40
  * @Description: 多级关联
  */

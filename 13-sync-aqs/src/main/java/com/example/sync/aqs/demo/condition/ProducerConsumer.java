@@ -1,4 +1,4 @@
-package com.example.sync.aqs.demo;
+package com.example.sync.aqs.demo.condition;
 
 
 import java.text.SimpleDateFormat;
@@ -10,7 +10,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-09-02 23:05
  * @Description: Condition实现生产者-消费者模型
  */

@@ -1,7 +1,7 @@
 package com.example.thread.interruption.demo;
 
 /**
- * @Author: 无双老师【云析学院】
+ * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-05-20
  * @Description: 重新中断
  */
