@@ -18,6 +18,7 @@
         <module>13-sync-aqs</module>
         <module>14-sync-lock</module>
         <module>15-sync-semaphore</module>
+        <module>16-sync-countdownlatch</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
