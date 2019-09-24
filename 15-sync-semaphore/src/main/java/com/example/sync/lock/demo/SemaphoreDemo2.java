@@ -12,7 +12,7 @@ import java.util.concurrent.Semaphore;
  * @Date: 2019-09-23 20:11
  * @Description: 信号量的使用
  */
-public class SemaphoreDemo {
+public class SemaphoreDemo2 {
 
     /**
      * 排队总人数（请求总数）
