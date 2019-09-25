@@ -19,6 +19,7 @@
         <module>14-sync-lock</module>
         <module>15-sync-semaphore</module>
         <module>16-sync-countdownlatch</module>
+        <module>17-concurrent-cyclicbarrier</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
