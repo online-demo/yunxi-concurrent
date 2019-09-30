@@ -22,6 +22,7 @@
         <module>17-concurrent-cyclicbarrier</module>
         <module>18-concurrent-arrayblockingqueue</module>
         <module>19-concurrent-delayqueue</module>
+        <module>20-concurrent-linkedblockingqueue</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
