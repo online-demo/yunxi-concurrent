@@ -1,4 +1,4 @@
-package com.example.concurrent.arrayblockqueue.demo;
+package com.example.concurrent.delayqueue.demo;
 
 /**
  * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】

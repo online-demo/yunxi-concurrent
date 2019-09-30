@@ -1,6 +1,4 @@
-package com.example.concurrent.arrayblockqueue.demo;
-
-import org.omg.PortableServer.THREAD_POLICY_ID;
+package com.example.concurrent.delayqueue.demo;
 
 import java.util.concurrent.ArrayBlockingQueue;
 
