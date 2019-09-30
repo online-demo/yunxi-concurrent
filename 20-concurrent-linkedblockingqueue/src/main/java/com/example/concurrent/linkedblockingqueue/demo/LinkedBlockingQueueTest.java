@@ -23,6 +23,9 @@ public class LinkedBlockingQueueTest {
      * 阻塞队列。
      */
     private static LinkedBlockingQueue<Integer> linkedBlockingQueue = new LinkedBlockingQueue<>(3);
+    /**
+     * 生产者-消费者模型传递的消息总数。
+     */
     private static final int COUNT = 100;
 
     /**
