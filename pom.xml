@@ -23,6 +23,7 @@
         <module>18-concurrent-arrayblockingqueue</module>
         <module>19-concurrent-delayqueue</module>
         <module>20-concurrent-linkedblockingqueue</module>
+        <module>21-concurrent-linkedblockingdeque</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

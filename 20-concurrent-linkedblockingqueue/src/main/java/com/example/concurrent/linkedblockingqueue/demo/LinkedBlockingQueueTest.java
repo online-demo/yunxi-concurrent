@@ -71,8 +71,8 @@ public class LinkedBlockingQueueTest {
     public static void main(String[] args) {
         // 推荐使用ThreadPoolExecutor创建线程。
         new Thread(new Producer(), "生产者1").start();
-        new Thread(new Consumer(), "消费者1").start();
-        new Thread(new Consumer(), "消费者2").start();
-        new Thread(new Consumer(), "消费者3").start();
+//        new Thread(new Consumer(), "消费者1").start();
+//        new Thread(new Consumer(), "消费者2").start();
+//        new Thread(new Consumer(), "消费者3").start();
     }
 }
