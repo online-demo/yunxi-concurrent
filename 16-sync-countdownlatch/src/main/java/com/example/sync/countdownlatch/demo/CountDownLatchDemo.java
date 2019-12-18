@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 /**
  * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-09-24 19:48
- * @Description: 配媳妇去看病，轮到媳妇看大夫时，我就开始去排队准备交钱了。
+ * @Description: 陪着媳妇去看病，轮到媳妇看大夫时，我就开始去排队准备交钱了。
  */
 public class CountDownLatchDemo {
     public static void main(String[] args) throws Exception{

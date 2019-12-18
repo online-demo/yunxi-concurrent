@@ -20,6 +20,8 @@
         <module>15-sync-semaphore</module>
         <module>16-sync-countdownlatch</module>
         <module>17-concurrent-cyclicbarrier</module>
+        <module>18-concurrent-arrayblockingqueue</module>
+        <module>19-concurrent-delayqueue</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

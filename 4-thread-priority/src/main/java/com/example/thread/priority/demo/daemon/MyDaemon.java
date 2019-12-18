@@ -8,7 +8,7 @@ package com.example.thread.priority.demo.daemon;
 public class MyDaemon implements Runnable {
     @Override
     public void run() {
-        for (long i = 0; i < 9999999; i++) {
+        for (long i = 0; i < 10; i++) {
             System.out.println("守护线程第" + i + "次执行！");
             try {
                 Thread.sleep(10);

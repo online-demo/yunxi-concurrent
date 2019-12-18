@@ -12,12 +12,14 @@ public class BatchThread extends Thread {
 
     @Override
     public void run() {
-        System.out.println("ThreadName = " + Thread.currentThread().getName() +
+        System.out.println("线程：" + Thread.currentThread().getName() +
                 "开始死循环了");
         while (!this.isInterrupted()) {
 
         }
-        System.out.println("ThreadName = " + Thread.currentThread().getName() +
+        System.out.println("线程：" + Thread.currentThread().getName() +
                 "结束了");
     }
+
+
 }

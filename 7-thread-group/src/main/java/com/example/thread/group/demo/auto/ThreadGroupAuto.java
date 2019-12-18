@@ -7,13 +7,19 @@ package com.example.thread.group.demo.auto;
  */
 public class ThreadGroupAuto {
     public static void main(String[] args) {
-        System.out.println("当前线程：" + Thread.currentThread().getName()
-                + ", 所属线程组：" + Thread.currentThread().getThreadGroup().getName()
-                + ", 线程组中有线程组数量：" + Thread.currentThread().getThreadGroup()
-                .activeGroupCount());
+        print();
         // 没有指定线程组，那么自动归到当前线程所属的线程组中
         ThreadGroup group = new ThreadGroup("新的组");
-        System.out.println("线程组中有线程组数量："
-                + Thread.currentThread().getThreadGroup().activeGroupCount());
+        print();
+    }
+
+    private static void print() {
+        Thread currentThread = Thread.currentThread();
+        System.out.println("当前线程：" + currentThread.getName()
+                + ", 所属线程组：" + currentThread.getThreadGroup().getName()
+                + ", 线程组中有线程组数量：" + currentThread.getThreadGroup()
+                .activeGroupCount()
+                + ", 线程组名为：" + currentThread.getThreadGroup()
+                .getName());
     }
 }

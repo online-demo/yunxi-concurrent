@@ -7,10 +7,10 @@ package com.example.thread.interruption.demo;
  */
 public class ReInterrupt extends Thread {
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
         ReInterrupt reInterrupt = new ReInterrupt();
         System.out.println("Starting thread...");
-        // 启动新线程
+        // 启动新线程。
         reInterrupt.start();
         // 主线程休眠3秒
         Thread.sleep(3000);
