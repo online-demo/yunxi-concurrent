@@ -5,7 +5,7 @@ import java.util.concurrent.SynchronousQueue;
 /**
  * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-12-16 20:05
- * @Description: SynchronizeQueue公平锁/非公平锁
+ * @Description: SynchronizeQueue使用方式
  */
 public class SynchronizeQueueTest {
     public static void main(String[] args) throws InterruptedException {
@@ -16,6 +16,7 @@ public class SynchronizeQueueTest {
             try {
                 for (int i = 0; i < count; i++) {
                     queue.put(i);
+                    System.out.println("生产者线程生产元素: " + i);
                 }
             } catch (InterruptedException e) {
             }
