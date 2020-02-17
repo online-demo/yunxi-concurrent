@@ -42,7 +42,7 @@ public class Message implements Delayed {
 
     @Override
     public String toString() {
-        return DelayQueueDemo.printDate() + "Message{" +
+        return "Message{" +
                 "time=" + time +
                 ", name='" + name + '\'' +
                 '}';

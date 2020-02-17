@@ -16,22 +16,22 @@ public class CopyOnWriteArrayListDemo {
         }
         new Thread(() -> {
             for (int i = 0; i < copyOnWriteArrayList.size(); i++) {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    Thread.sleep(1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
                 System.out.println(Thread.currentThread().getName() + "输出元素：" + copyOnWriteArrayList.get(i));
             }
         }).start();
 
         new Thread(() -> {
             for (int i = 0; i < copyOnWriteArrayList.size(); i++) {
-                try {
-                    Thread.sleep(800);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    Thread.sleep(800);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
                 if (copyOnWriteArrayList.get(i) % 2 == 0) {
                     System.out.println(Thread.currentThread().getName() + "删除元素：" + copyOnWriteArrayList.remove(i));
                 }

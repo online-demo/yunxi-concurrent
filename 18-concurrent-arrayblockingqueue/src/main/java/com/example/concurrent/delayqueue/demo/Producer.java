@@ -39,7 +39,7 @@ public class Producer implements Runnable {
             Random random = new Random();
             Bread bread = new Bread(random.nextInt(10));
             queue.put(bread);
-            System.out.println(Thread.currentThread().getName() + " 生产面包:" + bread);
+            System.out.println(Thread.currentThread().getName() + "生产面包:" + bread);
             Thread.sleep(300);
         } catch (InterruptedException e) {
             e.printStackTrace();

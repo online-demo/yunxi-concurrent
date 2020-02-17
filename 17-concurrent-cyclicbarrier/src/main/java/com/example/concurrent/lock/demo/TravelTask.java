@@ -6,7 +6,7 @@ import java.util.concurrent.CyclicBarrier;
 /**
  * @Author: 无双老师【云析学院:http://yunxiedu.net QQ:3190976240 email:zhouguanya20@163.com】
  * @Date: 2019-09-29 20:19
- * @Description: 旅行线程
+ * @Description: 旅行任务
  */
 public class TravelTask implements Runnable {
     /**

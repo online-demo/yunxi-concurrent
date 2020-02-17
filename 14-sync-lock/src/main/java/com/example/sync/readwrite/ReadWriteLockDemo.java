@@ -13,29 +13,32 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @Description: ReadWriteLock可重入读写锁
  */
 public class ReadWriteLockDemo {
-    public static final int COUNT = 5;
     /**
-     * 可重入读写锁
+     * 数量为5。
+     */
+    private static final int COUNT = 5;
+    /**
+     * 可重入读写锁。
      */
     private static ReentrantReadWriteLock readWriteLock = new ReentrantReadWriteLock();
     /**
-     * 读锁
+     * 读锁。
      */
     private static ReentrantReadWriteLock.ReadLock readLock = readWriteLock.readLock();
     /**
-     * 写锁
+     * 写锁。
      */
     private static ReentrantReadWriteLock.WriteLock writeLock = readWriteLock.writeLock();
 
     /**
-     * 处理读操作
+     * 处理读取操作。
      */
-    private void handleRead(@NotNull ReentrantReadWriteLock.ReadLock lock) throws InterruptedException {
+    private void handleRead(@NotNull ReentrantReadWriteLock.ReadLock lock)
+            throws InterruptedException {
         try {
-            // 模拟读操作
+            // 模拟读取操作。
             lock.lock();
             System.out.println(printDate() + " 读锁执行了。。。");
-            // 读操作的耗时越多，读写锁的性能优势就越明显
             Thread.sleep(5000);
         } finally {
             lock.unlock();
@@ -43,11 +46,12 @@ public class ReadWriteLockDemo {
     }
 
     /**
-     * 处理写操作
+     * 处理写操作。
      */
-    private void handleWrite(@NotNull ReentrantReadWriteLock.WriteLock lock, int index) throws InterruptedException {
+    private void handleWrite(@NotNull ReentrantReadWriteLock.WriteLock lock, int index)
+            throws InterruptedException {
         try {
-            // 模拟写操作
+            // 模拟写入操作。
             lock.lock();
             System.out.println(printDate() + " 写锁执行了。。。");
             Thread.sleep(5000);
@@ -56,11 +60,13 @@ public class ReadWriteLockDemo {
         }
     }
 
+
     public static void main(String[] args) {
-        final ReadWriteLockDemo demo = new ReadWriteLockDemo();
+        final ReadWriteLockDemo readWriteLockDemo = new ReadWriteLockDemo();
         Runnable readRunnable = () -> {
             try {
-                demo.handleRead(readLock);
+                // 处理读取操作。
+                readWriteLockDemo.handleRead(readLock);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -68,7 +74,8 @@ public class ReadWriteLockDemo {
 
         Runnable writeRunnable = () -> {
             try {
-                demo.handleWrite(writeLock, new Random().nextInt());
+                // 处理写入操作。
+                readWriteLockDemo.handleWrite(writeLock, new Random().nextInt());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

@@ -26,7 +26,7 @@ public class LinkedBlockingQueueTest {
     /**
      * 生产者-消费者模型传递的消息总数。
      */
-    private static final int COUNT = 100;
+    private static final int COUNT = 20;
 
     /**
      * 生产者线程。
@@ -38,7 +38,7 @@ public class LinkedBlockingQueueTest {
                 try {
                     Integer messageId = PRODUCE_COUNT.incrementAndGet();
                     linkedBlockingQueue.put(messageId);
-                    System.out.printf("%s生产消息id=%s,剩余容量%s%n", Thread.currentThread().getName(),
+                    System.out.printf("%s生产的消息id=%s，队列剩余容量=%s%n", Thread.currentThread().getName(),
                             messageId, linkedBlockingQueue.remainingCapacity());
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -55,9 +55,9 @@ public class LinkedBlockingQueueTest {
         public void run() {
             while (CONSUME_COUNT.get() < COUNT) {
                 try {
-                    // 带超时时间的出队，如果不存在将返回null。
+                    // 带超时时间的出队方法，如果不存在将返回null。
                     Integer messageId = linkedBlockingQueue.poll(5, TimeUnit.SECONDS);
-                    System.out.printf("%s消费消息id=%s,剩余容量%s%n", Thread.currentThread().getName(),
+                    System.out.printf("%s消费的消息id=%s，队列剩余容量=%s%n", Thread.currentThread().getName(),
                             messageId, linkedBlockingQueue.remainingCapacity());
                     CONSUME_COUNT.incrementAndGet();
                     Thread.sleep(10);
@@ -71,8 +71,8 @@ public class LinkedBlockingQueueTest {
     public static void main(String[] args) {
         // 推荐使用ThreadPoolExecutor创建线程。
         new Thread(new Producer(), "生产者1").start();
-//        new Thread(new Consumer(), "消费者1").start();
-//        new Thread(new Consumer(), "消费者2").start();
-//        new Thread(new Consumer(), "消费者3").start();
+        new Thread(new Consumer(), "消费者1").start();
+        new Thread(new Consumer(), "消费者2").start();
+        new Thread(new Consumer(), "消费者3").start();
     }
 }

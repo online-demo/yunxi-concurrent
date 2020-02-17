@@ -26,6 +26,7 @@
         <module>21-concurrent-linkedblockingdeque</module>
         <module>22-concurrent-synchronizequeue</module>
         <module>23-concurrent-copyonwritearraylist</module>
+        <module>24-concurrent-concurrenthashmap</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
