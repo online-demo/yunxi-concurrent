@@ -28,6 +28,7 @@
         <module>23-concurrent-copyonwritearraylist</module>
         <module>24-concurrent-concurrenthashmap</module>
         <module>25-atomic</module>
+        <module>26-threadpool-sourcecode</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
